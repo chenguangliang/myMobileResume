@@ -1,68 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=640, user-scalable=no"/>
-    <title></title>
-    <link rel="stylesheet" href="css/reset.min.css" type="text/css"/>
-    <link rel="stylesheet" href="css/animate.css" type="text/css"/>
-    <link rel="stylesheet" href="css/index.css" type="text/css"/>
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/index.js"></script>
+    <title>lily</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/resume.css">
 </head>
 <body>
-<div id="main">
-    <div class="music" id="music">
-        <audio id="audioFir" src="audioFile/beyond.mp3" preload="none" loop/>
-    </div>
-    <img src="img/arr.png" alt="" class="p1_arr"/>
-    <ul id="list">
-        <li>
-            <img src="img/01_top.png" alt="" class="p1_top"/>
-            <!--<div class="p1_top animated bounceInDown">个人简历</div>-->
-            <img src="img/01_bottom.png" alt="" class="p1_bottom"/>
+<section class="swiper-container">
+    <div class="swiper-wrapper">
 
-        </li>
-        <li>
-            <img src="img/02_top.png" alt="" class="p2_top"/>
-            <div id="p2_wrapper">
-                <img  src="img/02_content.png" alt="" id="p2_content" class="p2_content"/>
+        <div class="swiper-slide pageFir" trueId="pageFir">
+            <img src="img/666.png" alt="">
+            <img src="img/yq0KYVb885iAPuq0AAA-O72ZOBc238.png@sceneview" alt="">
+            <img src="img/yq0KYFb8846AHlHRAAAS8cTbH_A463.png@sceneview" alt="" width="100%">
+            <span class="span1">PERSONAL RESUME</span>
+            <span class="span2">个人简历</span>
+            <div class="lineBox">
+                <div class="line"></div>
             </div>
-            <!--<div id="p2_content" class="p2_content animated bounceInLeft">-->
-                <!--<p>陈广良 <br/>学历：本科<br/>专业：软件工程<br/>年龄：24</p>-->
+            <span class="span3">求职前端开发工程师</span>
+            <span class="span4">给我一个机会</span>
+            <span class="span5">还你一份惊喜</span>
+            <!--<div class="knowBox">-->
 
+                <!--<div class="know">-->
+                    <!--<div class="trBox">-->
+                        <!--<div></div>-->
+                    <!--</div>-->
+                    <!--进一步了解-->
+                    <!--<div class="trBox2">-->
+                        <!--<div></div>-->
+                    <!--</div>-->
+                <!--</div>-->
             <!--</div>-->
-            <img src="img/02_bottom.png" alt="" class="p2_bottom" />
-        </li>
-        <li>
-            <img src="img/03_top.png" alt="" class="p3_top"/>
-            <img src="img/03_all.png" alt="" class="p3_all"/>
-            <img src="img/03_bottom.png" alt="" class="p3_bottom"/>
-        </li>
-        <li>
-            <img src="img/04_top.png" alt="" class="p4_top"/>
 
-            <div class="p4_words">
-                <p class="quanzhan">为成为一名优秀的全栈开发工程师</p>
-                <h5 class="fendou">奋斗不止</h5>
 
-                <p class="ganxie">感谢您的观看</p>
 
-                <p class="tel">陈广良：15712833954</p>
+        </div>
+        <div class="swiper-slide pageSec" trueId="pageSec">
+            <div class="solidBorder">
+            <span class="person">个人信息</span>
+        </div>
+
+            <span class="about">ABOUT</span>
+            <div class="content">
+                <div class="nameBox">
+                    <img class="imgl"  src="img/dotleft.png@sceneview" alt="">
+                    <span class="name">陈广良</span>
+                    <img class="imgr" src="img/dotright.png@sceneview" alt="">
+                </div>
+                <ul>
+
+                    <li>性别：男</li>
+                    <li>出生日期：1992-10-10</li>
+                    <li>现居地：北京</li>
+                    <li>学历：本科</li>
+                    <li>专业：软件工程</li>
+                </ul>
+
+
+
             </div>
-            <img src="img/04_bg.png" alt="" class="p4_bg"/>
-            <!--<img src="img/04_woshou.png" alt="" class="p4_woshou animated bounceInLeft"/>-->
-        </li>
-    </ul>
-</div>
-<script type="text/javascript">
 
-    //->很据屏幕和设计稿的宽度比例重新计算REM计算的根值
-    ~function (desW) {
-        var winW = document.documentElement.clientWidth;
-        var winH = document.documentElement.clientHeight;
-        document.documentElement.style.fontSize = winW / desW * 100 + "px";
-    }(640);
+        </div>
+        <div class="swiper-slide pageThi" trueId="pageThi">
+            <div class="solidBorder">
+                <span class="person">专业技能</span>
+            </div>
+            <span class="about">SKILL</span>
+            <div class="skillAll">
+                <div class="tip"></div>
+                <div class="tip"></div>
+                <div class="tip"></div>
+                <div class="tip"></div>
+                <div class="tip"></div>
+                <div class="tip"></div>
+                <div class="tip"></div>
+                <span class="skillDesc">HTML5</span>
+                <span class="skillDesc">CSS3</span>
+                <span class="skillDesc">原生JS</span>
+                <span class="skillDesc">AJAX</span>
+                <span class="skillDesc">Node.JS</span>
+                <span class="skillDesc">jQuery</span>
+                <span class="skillDesc">AJAX</span>
+
+            </div>
+
+
+
+
+
+        </div>
+        <div class="swiper-slide pageFou" trueId="pageFou">
+            <div class="solidBorder">
+                <span class="person">求职意向</span>
+            </div>
+            <span class="about">Job Intention</span>
+            <div class="line"></div>
+            <div class="tri1"></div>
+            <div class="tri2"></div>
+            <div class="tri3"></div>
+            <div class="tri4"></div>
+
+            <p>求职意向</p>
+            <p>工作性质</p>
+            <p>求职类型</p>
+            <p>期望月薪</p>
+            <p>前端开发工程师</p>
+            <p>全职</p>
+            <p>计算机/网络/通信</p>
+            <p>15K</p>
+
+        </div>
+        <div class="swiper-slide pageFiv" trueId="pageFiv">
+            <div class="solidBorder">
+                <span class="person">自我评价</span>
+            </div>
+            <span class="about">Self Assessment</span>
+            <div class="Box">
+
+                <div class="head">积极<br>向上</div>
+                <div class="arml">努力</div>
+
+                <div class="body">诚恳</div>
+                <div class="armr">吃苦耐劳<br>爱生活</div>
+                <div class="legl">待<br>人<br>友<br>善</div>
+                <div class="legr">踏<br>实<br>肯<br>干</div>
+                <div class="desk">熟练掌握html+css布局以及原生JS语言，自己封装过DOM库、事件库、动画库，熟练使用jQuery、zepto、iScroll等类库框架</div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="swiper-slide pageSix" trueId="pageSix">
+            <div class="solidBorder">
+                <span class="person">联系方式</span>
+            </div>
+            <span class="about">Contact</span>
+            <img src="img/WeChat.png" alt="">
+            <span class="tel">TEL：157-1283-3954</span>
+            <span class="qq">QQ：920387307</span>
+
+            <div class="border"></div>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<section>
+    <div class="arrow"></div>
+</section>
+
+<section class="audioBox">
+    <audio loop preload="none" class="audio" src="music/beyond.mp3"></audio>
+</section>
+
+
+<script src="js/zepto.js"></script>
+<script type="text/javascript" charset="UTF-8" src="js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/fastClick.js"></script>
+<script charset="utf-8" src="js/resume.js"></script>
+<script>
+    FastClick.attach(document.body);
 </script>
 </body>
 </html>
