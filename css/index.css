@@ -1,13 +1,15 @@
 @charset "utf-8";
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 100px;
 }
 
 #main {
-    width: 640px;
-    height: 960px;
+    width: 6.4rem;
+    height: 9.6rem;
 }
 
 img {
@@ -18,7 +20,7 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
-    font-size: 100px;
+    font-size: 1rem;
     color: #fff;
     display: none;
     left: 0;
@@ -38,25 +40,26 @@ img {
 /*base end*/
 /*content start*/
 .p1_top {
-
+    position: relative;
+    top: -0.6rem;
 }
 
 .p1_bottom {
     position: absolute;
     bottom: 0;
     width: 102%;
-    left: -3px;
+    left: -0.03rem;
 }
 
 .p1_arr {
     display: block;
-    width: 90px;
-    height: 52px;
+    width: 0.9rem;
+    height: 0.52rem;
     z-index: 20;
     position: absolute;
     left: 50%;
-    margin-left: -45px;
-    bottom: 50px;
+    margin-left: -0.45rem;
+    bottom: 0.5rem;
     animation: 1s infinite arrMove; /*让箭头动起来*/
 }
 
@@ -95,44 +98,72 @@ img {
     margin-top: 4%;
 }
 
-.p2_content {
-    margin: auto;
-    margin-top: 2%;
+#p2_wrapper {
+
+    text-align: center;
+
 }
+
+.p2_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.9rem;
+    margin-top: -3.1rem;
+    width: 5.83rem;
+    height: 6.27rem;
+}
+
+/*.p2_content p{*/
+/**/
+/*position: absolute;*/
+/*left: 0.5rem;*/
+
+/*}*/
 
 .p2_bottom {
     width: 100%;
     position: absolute;
     bottom: 0;
 }
+
 .p3_top {
     margin: auto;
-    margin-top: 4%;
+    margin-top: 0.5rem;
 }
 
 .p3_all {
-    margin: auto;
-    margin-top: 4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2.15rem;
+    margin-top: -2.8rem;
+    width: 4.29rem;
+    height: 5.18rem;
 }
 
 .p3_bottom {
     position: absolute;
     bottom: -5%;
 }
-.p4_top{
+
+.p4_top {
     margin: auto;
     margin-top: 10%;
 }
-.p4_woshou{
+
+.p4_woshou {
     margin: auto;
     margin-top: 8%;
 }
-.p4_bg{
+
+.p4_bg {
     bottom: 15%;
     margin: auto;
     width: 100%;
 }
-.p4_words{
+
+.p4_words {
     width: 100%;
     text-align: center;
     padding-top: 10%;
@@ -140,38 +171,58 @@ img {
     position: absolute;
 
 }
-.p4_woshou{
+
+.p4_woshou {
     margin-top: -5%;
 }
-.info{
+
+.info {
     font-size: 40px;
 }
-.info.last{
+
+.info.last {
     margin-top: -10%;;
 }
-.title{
+
+.title {
     animation: 1.5s infinite imgActive;
 }
+
 @keyframes imgActive {
-    0%{transform: scale(1); opacity: 1;}
-    100%{transform: scale(1.2); opacity: 0;}
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
+
 @-webkit-keyframes imgActive {
-    0%{transform: scale(1); opacity: 1;}
-    100%{transform: scale(1.2); opacity: 0;}
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
+
 /*自动播放音乐*/
-.music{
+.music {
     display: none;
     z-index: 20;
     position: absolute;
     right: 8%;
-    top: 100px;
-    width: 36px;
-    height: 36px;
-    background:url("../audioFile/music.svg") no-repeat;
+    top: 1rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: url("../audioFile/music.svg") no-repeat;
     background-size: 100% 100%;
 }
+
 .musicMove {
     -webkit-animation: musicMove 1s linear 0s infinite;
     animation: musicMove 1s linear 0s infinite;

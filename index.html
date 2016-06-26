@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=640, user-scalable=no"/>
     <title></title>
-    <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/reset.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.css" type="text/css"/>
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/index.js"></script>
 </head>
@@ -18,12 +19,19 @@
     <ul id="list">
         <li>
             <img src="img/01_top.png" alt="" class="p1_top animated bounceInDown"/>
+            <!--<div class="p1_top animated bounceInDown">个人简历</div>-->
             <img src="img/01_bottom.png" alt="" class="p1_bottom animated bounceInUp"/>
 
         </li>
         <li>
             <img src="img/02_top.png" alt="" class="p2_top animated rotateIn"/>
-            <img src="img/02_content.png" alt="" class="p2_content animated bounceInLeft"/>
+            <div id="p2_wrapper">
+                <img  src="img/02_content.png" alt="" id="p2_content" class="p2_content animated bounceInLeft"/>
+            </div>
+            <!--<div id="p2_content" class="p2_content animated bounceInLeft">-->
+                <!--<p>陈广良 <br/>学历：本科<br/>专业：软件工程<br/>年龄：24</p>-->
+
+            <!--</div>-->
             <img src="img/02_bottom.png" alt="" class="p2_bottom animated rollIn"/>
         </li>
         <li>
@@ -47,5 +55,14 @@
         </li>
     </ul>
 </div>
+<script type="text/javascript">
+
+    //->很据屏幕和设计稿的宽度比例重新计算REM计算的根值
+    ~function (desW) {
+        var winW = document.documentElement.clientWidth;
+        var winH = document.documentElement.clientHeight;
+        document.documentElement.style.fontSize = winW / desW * 100 + "px";
+    }(640);
+</script>
 </body>
 </html>
