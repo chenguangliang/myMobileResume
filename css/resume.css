@@ -1415,7 +1415,8 @@ img {
 .pageFiv .Box>div{
     position: absolute;
     background: rgba(209,210,214,.8);
-    color: white;
+    color: rgba(0, 0, 0, 0.86);
+    font-weight: bold;
     font-size: .32rem;
     text-align: center;
     letter-spacing: .03rem;
